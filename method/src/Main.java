@@ -9,13 +9,21 @@ public class Main {
             System.out.println("Введите команду:\n1-пойти вниз\n2-пойти вверх\n3-пойти направо\n4-пойти налево\n5-печать координат робота:");
             int command = new Scanner(System.in).nextInt();
             if (command == 1) {
-                y--;
+                System.out.println("Ведите кол-во шагов: ");
+                int steps = new Scanner(System.in).nextInt();
+                y -= steps;
             } else if (command == 2) {
-                y++;
+                System.out.println("Ведите кол-во шагов: ");
+                int steps = new Scanner(System.in).nextInt();
+                y += steps;
             } else if (command == 3) {
-                x++;
+                System.out.println("Ведите кол-во шагов: ");
+                int steps = new Scanner(System.in).nextInt();
+                x += steps;
             } else if (command == 4) {
-                x--;
+                System.out.println("Ведите кол-во шагов: ");
+                int steps = new Scanner(System.in).nextInt();
+                x -= steps;
             } else if (command == 5) {
                 System.out.println("Координаты: x " + x + ", y " + y);
             } else {
