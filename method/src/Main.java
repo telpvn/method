@@ -1,43 +1,26 @@
-import java.util.Scanner;
-
 public class Main {
-    static int x = 0;
-    static int y = 0;
+    static int a;
+    static int b;
+    static int c;
+    static int d;
+    static int e;
+
+    static int f;
+    static int g;
+    static int h;
+    static int i;
+    static int j;
 
     public static void main(String[] args) {
-        while (true) {
-            int command = inputCommand();
-            if (command == 1) {
-                y -= inputSteps();
-            } else if (command == 2) {
-                y += inputSteps();
-            } else if (command == 3) {
-                x += inputSteps();
-            } else if (command == 4) {
-                x -= inputSteps();
-            } else if (command == 5) {
-                print();
-            } else {
-                errorInput();
-            }
-        }
+        test();
+        test2();
+
     }
 
-    private static void errorInput() {
-        System.out.println("Команда не верна!");
+    public static void test() {
+        System.out.println(a + b + c + d + e);
     }
-
-    private static void print() {
-        System.out.println("Координаты: x " + x + ", y " + y);
-    }
-
-    private static int inputSteps() {
-        System.out.println("Ведите кол-во шагов: ");
-        return new Scanner(System.in).nextInt();
-    }
-
-    private static int inputCommand() {
-        System.out.println("Введите команду:\n1-пойти вниз\n2-пойти вверх\n3-пойти направо\n4-пойти налево\n5-печать координат робота:");
-        return new Scanner(System.in).nextInt();
+    public static void test2() {
+        System.out.println(f - g - h - i - j);
     }
 }
